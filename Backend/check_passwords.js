@@ -18,9 +18,9 @@ async function checkPasswords() {
         process.stdout.write(`Trying password: "${password}" ... `);
         try {
             const connection = await mysql.createConnection({
-                host: 'localhost',
+                host: 'mysql.railway.internal',
                 user: 'root',
-                password: password
+                password: hdxVeWwBqQejIZVBDyuvyPTaRcVGvmGa
             });
             console.log("SUCCESS! ✅");
             console.log(`\nThe correct password is: "${password}"`);
