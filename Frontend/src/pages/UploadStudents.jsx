@@ -8,7 +8,7 @@ function UploadStudents() {
       <h2 className="deptname">Upload Student Excel</h2>
 
       <form
-        action="https://aiml-lab-attendence-1.onrender.com/upload-students"
+        action="https://aiml-attendance.onrender.com/upload-students"
         method="post"
         encType="multipart/form-data"
         className="ooo"
@@ -21,7 +21,7 @@ function UploadStudents() {
           className="buttonuu"
           type="button"
           onClick={() =>
-            window.location.href = "https://aiml-lab-attendence-1.onrender.com/download-entry"
+            window.location.href = "https://aiml-attendance.onrender.com/download-entry"
           }
           >
             Download Entry Excel

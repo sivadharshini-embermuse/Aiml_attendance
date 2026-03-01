@@ -5,7 +5,7 @@ function AdminDashboard() {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    fetch("https://aiml-lab-attendence-1.onrender.com/admin-dashboard")
+    fetch("https://aiml-attendance.onrender.com/admin-dashboard")
       .then(res => res.json())
       .then(d => setData(d));
   }, []);

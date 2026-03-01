@@ -14,7 +14,7 @@ const Home = () => {
   useEffect(() => {
     const getname = async () => {
       try {
-        const response = await fetch("https://aiml-lab-attendence-1.onrender.com/home");
+        const response = await fetch("https://aiml-attendance.onrender.com/home");
         const data = await response.json();
         setLabname(data.name);
       } catch (error) {
@@ -35,7 +35,7 @@ const Home = () => {
       e.preventDefault();
 
       try {
-        const response = await fetch("https://aiml-lab-attendence-1.onrender.com/register", {
+        const response = await fetch("https://aiml-attendance.onrender.com/register", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ regNumber, systemNo })
